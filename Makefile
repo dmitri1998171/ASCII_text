@@ -1,4 +1,4 @@
-BIN := ASCII_Words
+BIN := ASCII_text
 
 SRC := main.c
 CC := gcc

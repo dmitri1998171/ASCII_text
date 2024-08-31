@@ -236,8 +236,12 @@ char z[6][10] = {
 "\\_____/"
 };
 
-int main(void) {
-    printf("hello world\n");
+int main(int argc, char** argv) {
+    if(argc != 2) {
+        printf("Incorrect arguments!\n\nUse ASCII_text <string> (in quotes)"); 
+        exit(1);
+    }
+
     return 0;
 }
 
@@ -245,7 +249,7 @@ int main(void) {
 
         TODO
 
-    1) Collect letters
+    \/ 1) Collect letters
     2) Parse the sentense
     3) Print it
 
