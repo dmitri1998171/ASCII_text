@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
-char a[6][10] = {
+#define LINES 6
+#define COLS 10
+
+char a[LINES][COLS] = {
 "  ___  ",
 " / _ \\ ",
 "/ /_\\ \\",
@@ -11,7 +15,7 @@ char a[6][10] = {
 "\\_| |_/"
 };
 
-char b[6][10] = {
+char b[LINES][COLS] = {
 "______ ",
 "| ___ \\",
 "| |_/ /",
@@ -20,7 +24,7 @@ char b[6][10] = {
 "\\____/ "
 };
 
-char c[6][10] = {
+char c[LINES][COLS] = {
 " _____",
 "/  __ \\",
 "| /  \\/",
@@ -29,16 +33,16 @@ char c[6][10] = {
 " \\____/"
 };
 
-char d[6][10] = {
-"_____ ",
-"  _  \\",
-" | | |",
-" | | |",
-" |/ /",
-"___/ "
+char d[LINES][COLS] = {
+" _____ ",
+"|  _  \\",
+"| | | |",
+"| | | |",
+"| |/ /",
+"|___/ "
 };
 
-char e[6][10] = {
+char e[LINES][COLS] = {
 "|_____",
 "|  ___|",
 "| |__ ",
@@ -47,7 +51,7 @@ char e[6][10] = {
 "|____/"
 };
 
-char f[6][10] = {
+char f[LINES][COLS] = {
 "______ ",
 "|  ___|",
 "| |_   ",
@@ -56,7 +60,7 @@ char f[6][10] = {
 "\\_|    "
 };
 
-char g[6][10] = {
+char g[LINES][COLS] = {
 " _____ ",
 "|  __ \\",
 "| |  \\/",
@@ -65,7 +69,7 @@ char g[6][10] = {
 " \\____/"
 };
 
-char h[6][10] = {
+char h[LINES][COLS] = {
 " _   _ ",
 "| | | |",
 "| |_| |",
@@ -74,7 +78,7 @@ char h[6][10] = {
 "\\_| |_/"
 };
 
-char i[6][10] = {
+char i[LINES][COLS] = {
 " _____ ",
 "|_   _|",
 "  | |  ",
@@ -83,7 +87,7 @@ char i[6][10] = {
 " \\___/ "
 };
 
-char j[6][10] = {
+char j[LINES][COLS] = {
 "   ___ ",
 "  |_  |",
 "    | |",
@@ -92,7 +96,7 @@ char j[6][10] = {
 "\\____/ "
 };
 
-char k[6][10] = {
+char k[LINES][COLS] = {
 " _   __",
 "| | / /",
 "| |/ / ",
@@ -101,7 +105,7 @@ char k[6][10] = {
 "\\_| \\_/"
 };
 
-char l[6][10] = {
+char l[LINES][COLS] = {
 " _     ",
 "| |    ",
 "| |    ",
@@ -110,7 +114,7 @@ char l[6][10] = {
 "\\_____/"
 };
 
-char m[6][10] = {
+char m[LINES][COLS] = {
 "___  ___",
 "|  \\/  |",
 "| .  . |",
@@ -119,7 +123,7 @@ char m[6][10] = {
 "\\_|  |_/"
 };
 
-char n[6][10] = {
+char n[LINES][COLS] = {
 " _   _ ",
 "| \\ | |",
 "|  \\| |",
@@ -128,7 +132,7 @@ char n[6][10] = {
 "\\_| \\_/"
 };
 
-char o[6][10] = {
+char o[LINES][COLS] = {
 " _____ ",
 "|  _  |",
 "| | | |",
@@ -137,7 +141,7 @@ char o[6][10] = {
 " \\___/ "
 };
 
-char p[6][10] = {
+char p[LINES][COLS] = {
 "______ ",
 "| ___ \\",
 "| |_/ /",
@@ -146,7 +150,7 @@ char p[6][10] = {
 "\\_|    "
 };
 
-char q[6][10] = {
+char q[LINES][COLS] = {
 " _____ ",
 "|  _  |",
 "| | | |",
@@ -155,7 +159,7 @@ char q[6][10] = {
 " \\_/\\_\\"
 };
 
-char r[6][10] = {
+char r[LINES][COLS] = {
 "______ ",
 "| ___ \\",
 "| |_/ /",
@@ -164,7 +168,7 @@ char r[6][10] = {
 "\\_| \\_|"
 };
 
-char s[6][10] = {
+char s[LINES][COLS] = {
 "  _____ ",
 " /  ___|",
 " \\ `--. ",
@@ -173,7 +177,7 @@ char s[6][10] = {
 " \\____/ "
 };
 
-char t[6][10] = {
+char t[LINES][COLS] = {
 " _____ ",
 "|_   _|",
 "  | |  ",
@@ -182,7 +186,7 @@ char t[6][10] = {
 "  \\_/  "
 };
 
-char u[6][10] = {
+char u[LINES][COLS] = {
 " _   _ ",
 "| | | |",
 "| | | |",
@@ -191,7 +195,7 @@ char u[6][10] = {
 " \\___/ "
 };
 
-char v[6][10] = {
+char v[LINES][COLS] = {
 " _   _ ",
 "| | | |",
 "| | | |",
@@ -200,7 +204,7 @@ char v[6][10] = {
 " \\___/ "
 };
 
-char w[6][10] = {
+char w[LINES][COLS] = {
 " _    _ ",
 "| |  | |",
 "| |  | |",
@@ -209,7 +213,7 @@ char w[6][10] = {
 " \\/  \\/ "
 };
 
-char x[6][10] = {
+char x[LINES][COLS] = {
 "__   __",
 "\\ \\ / /",
 " \\ V / ",
@@ -218,7 +222,7 @@ char x[6][10] = {
 "\\/   \\/"
 };
 
-char y[6][10] = {
+char y[LINES][COLS] = {
 "__   __",
 "\\ \\ / /",
 " \\ V / ",
@@ -227,7 +231,7 @@ char y[6][10] = {
 "  \\_/  "
 };
 
-char z[6][10] = {
+char z[LINES][COLS] = {
 " ______",
 "|___  /",
 "   / / ",
@@ -236,12 +240,57 @@ char z[6][10] = {
 "\\_____/"
 };
 
+char** comparator(char letter) {
+    if(letter == 'a') return a;
+    if(letter == 'b') return b;
+    if(letter == 'c') return c;
+    if(letter == 'd') return d;
+    if(letter == 'e') return e;
+    if(letter == 'f') return f;
+    if(letter == 'g') return g;
+    if(letter == 'h') return h;
+    if(letter == 'i') return i;
+    if(letter == 'j') return j;
+    if(letter == 'k') return k;
+    if(letter == 'l') return l;
+    if(letter == 'm') return m;
+    if(letter == 'n') return n;
+    if(letter == 'o') return o;
+    if(letter == 'p') return p;
+    if(letter == 'q') return q;
+    if(letter == 'r') return r;
+    if(letter == 's') return s;
+    if(letter == 't') return t;
+    if(letter == 'u') return u;
+    if(letter == 'v') return v;
+    if(letter == 'w') return w;
+    if(letter == 'x') return x;
+    if(letter == 'y') return y;
+    if(letter == 'z') return z;
+}
+
+void printLetter(char letter[LINES][COLS]) {
+    for (int i = 0; i < LINES; i++) {
+        printf("%s\n", letter[i]);
+    }
+}
+
+void printVertically(const char* str) {
+    char** res;
+
+    for (int i = 0; i < strlen(str); i++) {
+        res = comparator(str[i]);
+        printLetter(res);
+    }
+}
+
 int main(int argc, char** argv) {
     if(argc != 2) {
         printf("Incorrect arguments!\n\nUse ASCII_text <string> (in quotes)"); 
         exit(1);
     }
 
+    printVertically(argv[1]);
     return 0;
 }
 
@@ -250,7 +299,7 @@ int main(int argc, char** argv) {
         TODO
 
     \/ 1) Collect letters
-    2) Parse the sentense
-    3) Print it
+    \/ 2) Parse the sentense
+    \/ 3) Print vertically
 
 */ 

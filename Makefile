@@ -2,7 +2,7 @@ BIN := ASCII_text
 
 SRC := main.c
 CC := gcc
-CFLAGS := -Wall
+CFLAGS := -Wincompatible-pointer-types
 LDFLAGS := 
 
 .PHONY: all clean
