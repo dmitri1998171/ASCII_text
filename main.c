@@ -6,7 +6,7 @@
 #define LINES 6
 #define COLS 10
 
-char a[LINES][COLS] = {
+char _a[LINES][COLS] = {
 "  ___  ",
 " / _ \\ ",
 "/ /_\\ \\",
@@ -15,7 +15,7 @@ char a[LINES][COLS] = {
 "\\_| |_/"
 };
 
-char b[LINES][COLS] = {
+char _b[LINES][COLS] = {
 "______ ",
 "| ___ \\",
 "| |_/ /",
@@ -24,7 +24,7 @@ char b[LINES][COLS] = {
 "\\____/ "
 };
 
-char c[LINES][COLS] = {
+char _c[LINES][COLS] = {
 " _____",
 "/  __ \\",
 "| /  \\/",
@@ -33,7 +33,7 @@ char c[LINES][COLS] = {
 " \\____/"
 };
 
-char d[LINES][COLS] = {
+char _d[LINES][COLS] = {
 " _____ ",
 "|  _  \\",
 "| | | |",
@@ -42,7 +42,7 @@ char d[LINES][COLS] = {
 "|___/ "
 };
 
-char e[LINES][COLS] = {
+char _e[LINES][COLS] = {
 "|_____",
 "|  ___|",
 "| |__ ",
@@ -51,7 +51,7 @@ char e[LINES][COLS] = {
 "|____/"
 };
 
-char f[LINES][COLS] = {
+char _f[LINES][COLS] = {
 "______ ",
 "|  ___|",
 "| |_   ",
@@ -60,7 +60,7 @@ char f[LINES][COLS] = {
 "\\_|    "
 };
 
-char g[LINES][COLS] = {
+char _g[LINES][COLS] = {
 " _____ ",
 "|  __ \\",
 "| |  \\/",
@@ -69,7 +69,7 @@ char g[LINES][COLS] = {
 " \\____/"
 };
 
-char h[LINES][COLS] = {
+char _h[LINES][COLS] = {
 " _   _ ",
 "| | | |",
 "| |_| |",
@@ -78,7 +78,7 @@ char h[LINES][COLS] = {
 "\\_| |_/"
 };
 
-char i[LINES][COLS] = {
+char _i[LINES][COLS] = {
 " _____ ",
 "|_   _|",
 "  | |  ",
@@ -87,7 +87,7 @@ char i[LINES][COLS] = {
 " \\___/ "
 };
 
-char j[LINES][COLS] = {
+char _j[LINES][COLS] = {
 "   ___ ",
 "  |_  |",
 "    | |",
@@ -96,7 +96,7 @@ char j[LINES][COLS] = {
 "\\____/ "
 };
 
-char k[LINES][COLS] = {
+char _k[LINES][COLS] = {
 " _   __",
 "| | / /",
 "| |/ / ",
@@ -105,7 +105,7 @@ char k[LINES][COLS] = {
 "\\_| \\_/"
 };
 
-char l[LINES][COLS] = {
+char _l[LINES][COLS] = {
 " _     ",
 "| |    ",
 "| |    ",
@@ -114,7 +114,7 @@ char l[LINES][COLS] = {
 "\\_____/"
 };
 
-char m[LINES][COLS] = {
+char _m[LINES][COLS] = {
 "___  ___",
 "|  \\/  |",
 "| .  . |",
@@ -123,7 +123,7 @@ char m[LINES][COLS] = {
 "\\_|  |_/"
 };
 
-char n[LINES][COLS] = {
+char _n[LINES][COLS] = {
 " _   _ ",
 "| \\ | |",
 "|  \\| |",
@@ -132,7 +132,7 @@ char n[LINES][COLS] = {
 "\\_| \\_/"
 };
 
-char o[LINES][COLS] = {
+char _o[LINES][COLS] = {
 " _____ ",
 "|  _  |",
 "| | | |",
@@ -141,7 +141,7 @@ char o[LINES][COLS] = {
 " \\___/ "
 };
 
-char p[LINES][COLS] = {
+char _p[LINES][COLS] = {
 "______ ",
 "| ___ \\",
 "| |_/ /",
@@ -150,7 +150,7 @@ char p[LINES][COLS] = {
 "\\_|    "
 };
 
-char q[LINES][COLS] = {
+char _q[LINES][COLS] = {
 " _____ ",
 "|  _  |",
 "| | | |",
@@ -159,7 +159,7 @@ char q[LINES][COLS] = {
 " \\_/\\_\\"
 };
 
-char r[LINES][COLS] = {
+char _r[LINES][COLS] = {
 "______ ",
 "| ___ \\",
 "| |_/ /",
@@ -168,7 +168,7 @@ char r[LINES][COLS] = {
 "\\_| \\_|"
 };
 
-char s[LINES][COLS] = {
+char _s[LINES][COLS] = {
 "  _____ ",
 " /  ___|",
 " \\ `--. ",
@@ -177,7 +177,7 @@ char s[LINES][COLS] = {
 " \\____/ "
 };
 
-char t[LINES][COLS] = {
+char _t[LINES][COLS] = {
 " _____ ",
 "|_   _|",
 "  | |  ",
@@ -186,7 +186,7 @@ char t[LINES][COLS] = {
 "  \\_/  "
 };
 
-char u[LINES][COLS] = {
+char _u[LINES][COLS] = {
 " _   _ ",
 "| | | |",
 "| | | |",
@@ -195,7 +195,7 @@ char u[LINES][COLS] = {
 " \\___/ "
 };
 
-char v[LINES][COLS] = {
+char _v[LINES][COLS] = {
 " _   _ ",
 "| | | |",
 "| | | |",
@@ -204,7 +204,7 @@ char v[LINES][COLS] = {
 " \\___/ "
 };
 
-char w[LINES][COLS] = {
+char _w[LINES][COLS] = {
 " _    _ ",
 "| |  | |",
 "| |  | |",
@@ -213,7 +213,7 @@ char w[LINES][COLS] = {
 " \\/  \\/ "
 };
 
-char x[LINES][COLS] = {
+char _x[LINES][COLS] = {
 "__   __",
 "\\ \\ / /",
 " \\ V / ",
@@ -222,7 +222,7 @@ char x[LINES][COLS] = {
 "\\/   \\/"
 };
 
-char y[LINES][COLS] = {
+char _y[LINES][COLS] = {
 "__   __",
 "\\ \\ / /",
 " \\ V / ",
@@ -231,7 +231,7 @@ char y[LINES][COLS] = {
 "  \\_/  "
 };
 
-char z[LINES][COLS] = {
+char _z[LINES][COLS] = {
 " ______",
 "|___  /",
 "   / / ",
@@ -240,47 +240,63 @@ char z[LINES][COLS] = {
 "\\_____/"
 };
 
-char** comparator(char letter) {
-    if(letter == 'a') return a;
-    if(letter == 'b') return b;
-    if(letter == 'c') return c;
-    if(letter == 'd') return d;
-    if(letter == 'e') return e;
-    if(letter == 'f') return f;
-    if(letter == 'g') return g;
-    if(letter == 'h') return h;
-    if(letter == 'i') return i;
-    if(letter == 'j') return j;
-    if(letter == 'k') return k;
-    if(letter == 'l') return l;
-    if(letter == 'm') return m;
-    if(letter == 'n') return n;
-    if(letter == 'o') return o;
-    if(letter == 'p') return p;
-    if(letter == 'q') return q;
-    if(letter == 'r') return r;
-    if(letter == 's') return s;
-    if(letter == 't') return t;
-    if(letter == 'u') return u;
-    if(letter == 'v') return v;
-    if(letter == 'w') return w;
-    if(letter == 'x') return x;
-    if(letter == 'y') return y;
-    if(letter == 'z') return z;
+void takeLetters(char *text, int length, char result[][LINES][COLS]) {
+    for (int j = 0; j < LINES; j++) {
+        for (int i = 0; i < length; i++) {
+            for (int k = 0; k < COLS; k++) {
+                if(text[i] == 'a') result[i][j][k] = _a[j][k];
+                if(text[i] == 'b') result[i][j][k] = _b[j][k];
+                if(text[i] == 'c') result[i][j][k] = _c[j][k];
+                if(text[i] == 'd') result[i][j][k] = _d[j][k];
+                if(text[i] == 'e') result[i][j][k] = _e[j][k];
+                if(text[i] == 'f') result[i][j][k] = _f[j][k];
+                if(text[i] == 'g') result[i][j][k] = _g[j][k];
+                if(text[i] == 'h') result[i][j][k] = _h[j][k];
+                if(text[i] == 'i') result[i][j][k] = _i[j][k];
+                if(text[i] == 'j') result[i][j][k] = _j[j][k];
+                if(text[i] == 'k') result[i][j][k] = _k[j][k];
+                if(text[i] == 'l') result[i][j][k] = _l[j][k];
+                if(text[i] == 'm') result[i][j][k] = _m[j][k];
+                if(text[i] == 'n') result[i][j][k] = _n[j][k];
+                if(text[i] == 'o') result[i][j][k] = _o[j][k];
+                if(text[i] == 'p') result[i][j][k] = _p[j][k];
+                if(text[i] == 'q') result[i][j][k] = _q[j][k];
+                if(text[i] == 'r') result[i][j][k] = _r[j][k];
+                if(text[i] == 's') result[i][j][k] = _s[j][k];
+                if(text[i] == 't') result[i][j][k] = _t[j][k];
+                if(text[i] == 'u') result[i][j][k] = _u[j][k];
+                if(text[i] == 'v') result[i][j][k] = _v[j][k];
+                if(text[i] == 'w') result[i][j][k] = _w[j][k];
+                if(text[i] == 'x') result[i][j][k] = _x[j][k];
+                if(text[i] == 'y') result[i][j][k] = _y[j][k];
+                if(text[i] == 'z') result[i][j][k] = _z[j][k];
+            }
+        }
+    }
 }
 
 void printLetter(char letter[LINES][COLS]) {
     for (int i = 0; i < LINES; i++) {
-        printf("%s\n", letter[i]);
+        for (int j = 0; j < COLS; j++) {
+            printf("%c", letter[i][j]);
+        }
+        printf("\n");
     }
 }
 
-void printVertically(const char* str) {
-    char** res;
+void printVertically(int length, char result[][LINES][COLS]) {
+    for (int i = 0; i < length; i++) {
+        printLetter(result[i]);
+    }
+}
 
-    for (int i = 0; i < strlen(str); i++) {
-        res = comparator(str[i]);
-        printLetter(res);
+void printHorizontally(int length, char result[][LINES][COLS]) {
+    for (int j = 0; j < LINES; j++) {
+        for (int i = 0; i < length; i++) {
+            for (int k = 0; k < COLS; k++) 
+                printf("%c", result[i][j][k]);
+        }
+        printf("\n");
     }
 }
 
@@ -289,8 +305,14 @@ int main(int argc, char** argv) {
         printf("Incorrect arguments!\n\nUse ASCII_text <string> (in quotes)"); 
         exit(1);
     }
+    
+    int length = strlen(argv[1]);
+    char result[length][LINES][COLS];
 
-    printVertically(argv[1]);
+    takeLetters(argv[1], length, result);
+    printHorizontally(length, result);
+    // printVertically(length, result);
+
     return 0;
 }
 
@@ -301,5 +323,7 @@ int main(int argc, char** argv) {
     \/ 1) Collect letters
     \/ 2) Parse the sentense
     \/ 3) Print vertically
+     4) Print horizontally
+     5) Connect styles
 
 */ 
