@@ -43,7 +43,7 @@ char _d[LINES][COLS] = {
 };
 
 char _e[LINES][COLS] = {
-"|_____",
+" _____",
 "|  ___|",
 "| |__ ",
 "|  __|",
@@ -240,41 +240,6 @@ char _z[LINES][COLS] = {
 "\\_____/"
 };
 
-void takeLetters(char *text, int length, char result[][LINES][COLS]) {
-    for (int j = 0; j < LINES; j++) {
-        for (int i = 0; i < length; i++) {
-            for (int k = 0; k < COLS; k++) {
-                if(text[i] == 'a') result[i][j][k] = _a[j][k];
-                if(text[i] == 'b') result[i][j][k] = _b[j][k];
-                if(text[i] == 'c') result[i][j][k] = _c[j][k];
-                if(text[i] == 'd') result[i][j][k] = _d[j][k];
-                if(text[i] == 'e') result[i][j][k] = _e[j][k];
-                if(text[i] == 'f') result[i][j][k] = _f[j][k];
-                if(text[i] == 'g') result[i][j][k] = _g[j][k];
-                if(text[i] == 'h') result[i][j][k] = _h[j][k];
-                if(text[i] == 'i') result[i][j][k] = _i[j][k];
-                if(text[i] == 'j') result[i][j][k] = _j[j][k];
-                if(text[i] == 'k') result[i][j][k] = _k[j][k];
-                if(text[i] == 'l') result[i][j][k] = _l[j][k];
-                if(text[i] == 'm') result[i][j][k] = _m[j][k];
-                if(text[i] == 'n') result[i][j][k] = _n[j][k];
-                if(text[i] == 'o') result[i][j][k] = _o[j][k];
-                if(text[i] == 'p') result[i][j][k] = _p[j][k];
-                if(text[i] == 'q') result[i][j][k] = _q[j][k];
-                if(text[i] == 'r') result[i][j][k] = _r[j][k];
-                if(text[i] == 's') result[i][j][k] = _s[j][k];
-                if(text[i] == 't') result[i][j][k] = _t[j][k];
-                if(text[i] == 'u') result[i][j][k] = _u[j][k];
-                if(text[i] == 'v') result[i][j][k] = _v[j][k];
-                if(text[i] == 'w') result[i][j][k] = _w[j][k];
-                if(text[i] == 'x') result[i][j][k] = _x[j][k];
-                if(text[i] == 'y') result[i][j][k] = _y[j][k];
-                if(text[i] == 'z') result[i][j][k] = _z[j][k];
-            }
-        }
-    }
-}
-
 void printLetter(char letter[LINES][COLS]) {
     for (int i = 0; i < LINES; i++) {
         for (int j = 0; j < COLS; j++) {
@@ -284,17 +249,70 @@ void printLetter(char letter[LINES][COLS]) {
     }
 }
 
-void printVertically(int length, char result[][LINES][COLS]) {
-    for (int i = 0; i < length; i++) {
-        printLetter(result[i]);
+void printVertically(char *text) {
+    for (int i = 0; i < strlen(text); i++) {
+        if(text[i] == 'a') printLetter(_a);
+        if(text[i] == 'b') printLetter(_b);
+        if(text[i] == 'c') printLetter(_c);
+        if(text[i] == 'd') printLetter(_d);
+        if(text[i] == 'e') printLetter(_e);
+        if(text[i] == 'f') printLetter(_f);
+        if(text[i] == 'g') printLetter(_g);
+        if(text[i] == 'h') printLetter(_h);
+        if(text[i] == 'i') printLetter(_i);
+        if(text[i] == 'j') printLetter(_j);
+        if(text[i] == 'k') printLetter(_k);
+        if(text[i] == 'l') printLetter(_l);
+        if(text[i] == 'm') printLetter(_m);
+        if(text[i] == 'n') printLetter(_n);
+        if(text[i] == 'o') printLetter(_o);
+        if(text[i] == 'p') printLetter(_p);
+        if(text[i] == 'q') printLetter(_q);
+        if(text[i] == 'r') printLetter(_r);
+        if(text[i] == 's') printLetter(_s);
+        if(text[i] == 't') printLetter(_t);
+        if(text[i] == 'u') printLetter(_u);
+        if(text[i] == 'v') printLetter(_v);
+        if(text[i] == 'w') printLetter(_w);
+        if(text[i] == 'x') printLetter(_x);
+        if(text[i] == 'y') printLetter(_y);
+        if(text[i] == 'z') printLetter(_z);
+        if(text[i] == ' ') printf(" ");
     }
 }
 
-void printHorizontally(int length, char result[][LINES][COLS]) {
+void printHorizontally(char *text) {
     for (int j = 0; j < LINES; j++) {
-        for (int i = 0; i < length; i++) {
-            for (int k = 0; k < COLS; k++) 
-                printf("%c", result[i][j][k]);
+        for (int i = 0; i < strlen(text); i++) {
+            for (int k = 0; k < COLS; k++) {
+                if(text[i] == 'a') printf("%c", _a[j][k]);
+                if(text[i] == 'b') printf("%c", _b[j][k]);
+                if(text[i] == 'c') printf("%c", _c[j][k]);
+                if(text[i] == 'd') printf("%c", _d[j][k]);
+                if(text[i] == 'e') printf("%c", _e[j][k]);
+                if(text[i] == 'f') printf("%c", _f[j][k]);
+                if(text[i] == 'g') printf("%c", _g[j][k]);
+                if(text[i] == 'h') printf("%c", _h[j][k]);
+                if(text[i] == 'i') printf("%c", _i[j][k]);
+                if(text[i] == 'j') printf("%c", _j[j][k]);
+                if(text[i] == 'k') printf("%c", _k[j][k]);
+                if(text[i] == 'l') printf("%c", _l[j][k]);
+                if(text[i] == 'm') printf("%c", _m[j][k]);
+                if(text[i] == 'n') printf("%c", _n[j][k]);
+                if(text[i] == 'o') printf("%c", _o[j][k]);
+                if(text[i] == 'p') printf("%c", _p[j][k]);
+                if(text[i] == 'q') printf("%c", _q[j][k]);
+                if(text[i] == 'r') printf("%c", _r[j][k]);
+                if(text[i] == 's') printf("%c", _s[j][k]);
+                if(text[i] == 't') printf("%c", _t[j][k]);
+                if(text[i] == 'u') printf("%c", _u[j][k]);
+                if(text[i] == 'v') printf("%c", _v[j][k]);
+                if(text[i] == 'w') printf("%c", _w[j][k]);
+                if(text[i] == 'x') printf("%c", _x[j][k]);
+                if(text[i] == 'y') printf("%c", _y[j][k]);
+                if(text[i] == 'z') printf("%c", _z[j][k]);
+                if(text[i] == ' ') printf(" ");
+            }
         }
         printf("\n");
     }
@@ -306,15 +324,17 @@ int main(int argc, char** argv) {
         exit(1);
     }
     
-    int length = strlen(argv[1]);
-    char result[length][LINES][COLS];
-
-    takeLetters(argv[1], length, result);
-    printHorizontally(length, result);
-    // printVertically(length, result);
+    // printHorizontally(argv[1]);
+    printVertically(argv[1]);
 
     return 0;
 }
+
+/*
+
+Use "The quick brown fox jumps over the lazy dog" text for testing all letters in the alphabet
+
+*/ 
 
 /*
 
@@ -323,7 +343,7 @@ int main(int argc, char** argv) {
     \/ 1) Collect letters
     \/ 2) Parse the sentense
     \/ 3) Print vertically
-     4) Print horizontally
+    \/ 4) Print horizontally
      5) Connect styles
 
 */ 
